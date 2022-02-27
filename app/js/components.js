@@ -553,6 +553,9 @@ function moveComponent(
                 continue;
             }
 
+            //Hot fix infiniie loop bug   
+            dx = Math.round(dx);
+            dy = Math.round(dy);
             while(Math.abs(dx) + Math.abs(dy) > 0) {
                 let sdx = 0;
                 let sdy = 0;
@@ -609,6 +612,9 @@ function moveComponent(
                 continue;
             }
 
+            //Hot fix infiniie loop bug
+            dx = Math.round(dx);
+            dy = Math.round(dy);    
             while(Math.abs(dx) + Math.abs(dy) > 0) {
                 let sdx = 0;
                 let sdy = 0;
